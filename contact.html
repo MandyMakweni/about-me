@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>contact</title>
+  </head>
+  <body>
+    <form action="" id="myform" >
+    <p>
+        <label for='FirstName'>First Name:</label>
+        <input type="text" id="FirstName" name="FirstName" />
+    </p>
+    <p>
+        <label for='LastName'>Last Name:</label>
+        <input type="text" id="LastName" name="LastName" />
+    </p>
+    <p>
+        <label for='EMail'>EMail:</label>
+        <input type="text" id="EMail" name="EMail" />
+    </p>
+    <p>
+        <label for='Phone'>Phone:</label>
+        <input type="text" id="Phone" name="Phone" />
+    </p>
+  
+    <p>
+        <input type="submit" name="submit" value="Submit">
+    </p>
+    </form>
+    <script  type="text/javascript">
+     var frmvalidator = new Validator("myform");
+     frmvalidator.addValidation("FirstName","req","Please enter your First Name");
+     frmvalidator.addValidation("FirstName","maxlen=20",
+            "Max length for FirstName is 20");
+
+     frmvalidator.addValidation("LastName","req");
+     frmvalidator.addValidation("LastName","maxlen=20");
+
+     frmvalidator.addValidation("Email","maxlen=50");
+     frmvalidator.addValidation("Email","req");
+     frmvalidator.addValidation("Email","email");
+
+     frmvalidator.addValidation("Phone","maxlen=50");
+     frmvalidator.addValidation("Phone","numeric");
+
+    </script>
+
+
+  </script>
+</html>

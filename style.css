@@ -1,0 +1,143 @@
+body{
+  margin: 10px;
+  background-color: #DCDCDC;
+
+}
+h1{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 6px 7px 8px white, 3px 3px 5px maroon;
+  font-family: 'Barrio', cursive;
+  font-family: 'Diplomata', cursive;
+
+}
+h2{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Great Vibes', cursive;
+
+
+}
+
+p{
+
+  font-family: 'Arial ';
+  font-size:25px;
+  color: black;
+
+}
+
+.image{
+  height: 350px;
+  width: 350px;
+  border:groove;
+  border: 10px solid white;
+  margin-left: 400px;
+  margin-top: 40px;
+  }
+
+
+  nav {
+    overflow: hidden;
+    background-color: black;
+    text-decoration: none;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: #800080;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+
+  nav a:hover {
+    background-color: #DCDCDC;
+    color: black;
+  }
+
+  nav a.active {
+      background-color: white;
+      color: white;
+  }
+
+.slider__title {
+  font-weight: 100;
+  font-size: 2.5em;
+  color: black;
+}
+
+.links {
+    text-align: center;
+    padding-bottom:  900px;
+    margin-bottom: 900px;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.opener {
+  display: inline-block;
+  padding: 15px 35px;
+  background: transparent;
+  border:groove;
+  border-color:pink;
+  color: white;
+  text-decoration: none;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-shadow: 2px 1px 2px gray;
+
+
+}
+  .opener:hover {
+    background-color: pink;
+    color: black;
+
+}
+
+#left:target {
+  left: 0;
+  opacity: 1;
+}
+
+#right:target {
+  transform: translateX(0);
+  opacity: 1;
+
+}
+
+.slider {
+  position: fixed;
+  width: 280px;
+  padding: 20px;
+  border:groove;
+  border-color: #0E2B2B;
+  border-width: 10px;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  transition: all .6s ease;
+}
+
+.slider--left {
+  left: -200px;
+}
+.slider--right {
+  right: 0;
+  transform: translateX(200px);
+}
+
+div.container{
+
+    margin: 0 auto;
+  padding: 10em 3em;
+  text-align: center;
+}
